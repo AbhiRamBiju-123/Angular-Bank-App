@@ -1,1 +1,8 @@
 /* You can add global styles to this file, and also import other style files */
+.t{
+    transition: 0.5ms;
+
+}
+.t:hover{
+    transform: scale(1.06);
+}
