@@ -1,5 +1,5 @@
 <body style="background-color: black;">
-  <h1 class="mt-3 ms-3" style="color: aqua;">{{data}}</h1>
+  <!-- <h1 class="mt-3 ms-3" style="color: aqua;">{{data}}</h1> -->
 <div class="container-fluid" >
   <div class="row">
     <div class=" col-lg-6 col-md-12 col-sm-12 col-12 ">
@@ -12,12 +12,12 @@
         <form class="form mt-5">
           <span class="title text-info">LOGIN</span>
           <div class="form_control">
-            <input name="uname" id="u1" class="input" type="text" [placeholder]="pdata">
+            <input #acno name="uname" id="u1" class="input" type="text" [placeholder]="pdata">
           </div>
           <div class="form_control">
-            <input name="passW" id="p1" class="input" type="password" placeholder="Enter your password">
+            <input #psw name="passW" id="p1" class="input" type="password" placeholder="Enter your password">
           </div>
-          <button (click)="login()" type="submit" class="fs-5">Login</button>
+          <button (click)="login(acno,psw)" type="submit" class="fs-5">Login</button>
           <p class="text-white ">Dont have an account ? <a class="text-info" style="text-decoration:none ;"
               href="register">Create account</a></p>
         </form>
